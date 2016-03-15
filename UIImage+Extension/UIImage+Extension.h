@@ -19,4 +19,8 @@
  * 返回透明背景的圆形图片
  */
 - (UIImage *)circleImage;
+/**
+ *  传入一个view 返回截取的图片
+ */
++ (instancetype)captureWithView:(UIView *)view;
 @end
