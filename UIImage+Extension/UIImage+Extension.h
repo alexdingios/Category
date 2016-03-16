@@ -23,4 +23,6 @@
  *  传入一个view 返回截取的图片
  */
 + (instancetype)captureWithView:(UIView *)view;
+// 快速的返回一个最原始的图片，去掉系统渲染
++ (instancetype)imageWithOriRenderingImage:(NSString *)imageName;
 @end

@@ -67,4 +67,10 @@
     
     return newImage;
 }
+// 快速的返回一个最原始的图片，去掉系统渲染
++ (instancetype)imageWithOriRenderingImage:(NSString *)imageName
+{
+    UIImage *image = [UIImage imageNamed:imageName];
+    return [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+}
 @end
